@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Smart Udhari Manager
 
-# Run and deploy your AI Studio app
+**Aesthetic, minimal web app for shopkeepers to manage customer credit (Udhari) efficiently.**
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/10vzXrz-tzmkatH-vdc1K2M2IbMi7QyqT
+## Overview
 
-## Run Locally
+Smart Udhari Manager is a **Flask-based web app** designed for **single shopkeeper use**.  
+It allows shopkeepers to:  
+- Track customers’ pending payments  
+- Send **automated WhatsApp reminders** via Twilio  
+- View payment history and upcoming dues  
+- Download reports (PDF/CSV)  
+- Search customers quickly  
+- Switch between **light and dark mode** for comfort  
 
-**Prerequisites:**  Node.js
+This app **digitizes the traditional credit notebook** while keeping it simple and user-friendly.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Features
+
+- Add and manage customers with:  
+  - Name  
+  - Phone number  
+  - Address  
+  - Pending amount  
+  - Due date  
+  - Last payment date  
+  - Notes
+- Dashboard displaying:  
+  - Total payment to be received  
+  - Upcoming dues  
+  - Payment history  
+- **Automated WhatsApp reminders** for due payments  
+- **Search functionality** for customers  
+- **Dark mode** toggle  
+- Reports **viewable online** and **downloadable** in PDF/CSV
+
+---
+
+## Tech Stack
+
+- **Backend:** Flask  
+- **Database:** SQLite  
+- **Frontend:** HTML, CSS, (optional: Bootstrap/Tailwind for aesthetics)  
+- **API:** Twilio WhatsApp API  
+- **Others:** Python libraries like pandas (for reports), Flask-Login (for auth)
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/smart-udhari-manager.git
+cd smart-udhari-manager
