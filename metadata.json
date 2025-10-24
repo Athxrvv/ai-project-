@@ -1,0 +1,5 @@
+{
+  "name": "Smart Udhari Manager",
+  "description": "A web app for a single shopkeeper to manage customers’ pending payments (udhari), send automated WhatsApp reminders, view payment history, and generate downloadable reports — all with an aesthetic, minimal, and comfortable interface.",
+  "requestFramePermissions": []
+}
